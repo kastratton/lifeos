@@ -13,7 +13,7 @@ function uid(){ return Date.now().toString(36) + Math.random().toString(36).slic
 function defaultData(){
   return {
     settings: {
-      theme: 'light',
+      theme: 'dark',
       medicationReorderDays: 7,
       categories: {
         income: ['Salary','Freelance','Investments','Other'],
@@ -250,7 +250,7 @@ const PAGES = [
   {id:'budget', label:'Budget', icon:'£', render: renderBudget},
   {id:'networth', label:'Net Worth', icon:'◈', render: renderNetWorth},
   {id:'nonmonthly', label:'Non-monthly Expenses', icon:'▤', render: renderNonMonthly},
-  {id:'contacts', label:'Contacts', icon:'☺', render: renderContacts},
+  {id:'contacts', label:'Contacts', icon:'☎', render: renderContacts},
   {id:'birthdays', label:'Birthdays', icon:'✦', render: renderBirthdays},
   {id:'todos', label:'Todo List', icon:'☑', render: renderTodos},
   {id:'notes', label:'Notes', icon:'✎', render: renderNotes},
@@ -340,7 +340,9 @@ function renderDashboard(container){
   const netWorth = assets - liabilities;
 
   let html = `<div class="stat-row">
-    <div class="stat-card"><div class="label">Monthly surplus</div><div class="value ${surplus<0?'negative':'positive'}">${fmtMoney(surplus)}</div></div>
+    <a href="#budget">
+      <div class="stat-card"><div class="label">Monthly surplus</div><div class="value ${surplus<0?'negative':'positive'}">${fmtMoney(surplus)}</div></div>
+    </a>
     <div class="stat-card"><div class="label">Net worth</div><div class="value ${netWorth<0?'negative':'positive'}">${fmtMoney(netWorth)}</div></div>
   </div>`;
 
