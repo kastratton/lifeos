@@ -135,6 +135,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 /* ============ common components ============ */
 .stat-row{ display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap:12px; margin-bottom:24px; }
+.quick-link {text-decoration: none};
 .stat-card{
   background: var(--surface); border:1px solid var(--border); border-radius: var(--radius-m);
   padding: 16px 18px;
@@ -143,6 +144,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .stat-card .value{ font-family: var(--serif); font-size:28px; font-weight:600; }
 .stat-card .value.negative{ color: var(--red); }
 .stat-card .value.positive{ color: var(--accent); }
+
 
 .section{ margin-bottom: 34px; }
 .section-head{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px; gap:10px; }

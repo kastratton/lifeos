@@ -340,7 +340,7 @@ function renderDashboard(container){
   const netWorth = assets - liabilities;
 
   let html = `<div class="stat-row">
-    <a href="#/budget">
+    <a href="#/budget" class="quick-link">
       <div class="stat-card"><div class="label">Monthly surplus</div><div class="value ${surplus<0?'negative':'positive'}">${fmtMoney(surplus)}</div></div>
     </a>
     <div class="stat-card"><div class="label">Net worth</div><div class="value ${netWorth<0?'negative':'positive'}">${fmtMoney(netWorth)}</div></div>
