@@ -343,7 +343,9 @@ function renderDashboard(container){
     <a href="#/budget" class="quick-link">
       <div class="stat-card"><div class="label">Monthly surplus</div><div class="value ${surplus<0?'negative':'positive'}">${fmtMoney(surplus)}</div></div>
     </a>
-    <div class="stat-card"><div class="label">Net worth</div><div class="value ${netWorth<0?'negative':'positive'}">${fmtMoney(netWorth)}</div></div>
+    <a href="#/networth" class="quick-link">
+      <div class="stat-card"><div class="label">Net worth</div><div class="value ${netWorth<0?'negative':'positive'}">${fmtMoney(netWorth)}</div></div>
+    </a>
   </div>`;
 
   // Upcoming non-monthly expenses (next 3 months)
