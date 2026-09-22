@@ -1,7 +1,8 @@
 {
     "name": "LifeOS",
     "short_name": "LifeOS",
-    "start_url": "/lifeos/index.html",
+    "start_url": "./",
+    "scope": "./",
     "display": "standalone",
     "background_color": "#26594A",
     "theme_color": "#26594A",

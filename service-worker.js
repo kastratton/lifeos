@@ -1,11 +1,11 @@
 const CACHE_NAME = "my-cache-v1";
 const urlsToCache = [
-    "/",
-    "/index.html",
-    "/css/styles.css",
-    "/js/app.js",
-    "/assets/logo.png",
-    "/assets/logos"
+    "./",
+    "./index.html",
+    "./css/styles.css",
+    "./js/app.js",
+    "./assets/logo.png",
+    "./assets/logos"
   ];
   
 

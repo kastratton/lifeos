@@ -1,3 +1,13 @@
+// PWA Support
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./service-worker.js').then(() => 
+  console.log("Service worker registered"))
+  .catch(error =>
+    console.log("Service worker registration failed:", error)
+  );
+}
+
 /* ==========================================================================
    LifeOS — single-file application logic
    Vanilla JS, no build step, no frameworks. Data lives in localStorage.
